@@ -68,12 +68,13 @@ nav a {
   /*border: 1px solid blue;*/
   display: flex;
   align-items: center;
+  background-color: lightgray;
 }
 
 .banner .content{
   /*border: 1px solid green;*/
   max-width: 30%;
-  padding: 0 1.5rem;
+  padding: 0 1rem;
 }
 
 .banner .spacer {
@@ -96,27 +97,51 @@ nav a {
   display: flex;
 }
 
+.main-article {
+  margin-bottom: 2rem;
+}
+
+.main-article .content {
+  padding: 0 1.5rem;
+  line-height: 1.5;
+}
+
+.main-article p {
+  padding: 1.5rem 0;
+}
+
 .side-articles {
   /*border: 1px solid green;*/
   width: 40%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 1rem 0.5rem;
+  padding-top: 1rem;
   border-left: 1px solid lightgray;
 }
 
 .article {
   display: flex;
   align-items: center;
+  border-bottom: 3px solid lightgrey;
 }
 .article .content {
   width: 65%;
+  line-height: 1.5;
 }
 
 .article img {
   width: 35%;
   padding: 1rem;
+}
+
+#featured {
+  background-color: lightgrey;
+}
+
+.article a {
+  display: block;
+  color: deepskyblue;
 }
 
 
