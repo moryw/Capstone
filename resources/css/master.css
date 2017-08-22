@@ -15,6 +15,13 @@ h3 {
   font-size: 1.17rem;
 }
 
+h5 {
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
 
 /* header section */
 
@@ -144,6 +151,45 @@ nav a {
   color: deepskyblue;
 }
 
+.learning {
+  text-align: center;
+  background-color: lightgray;
+  padding: 1rem 3rem;
+}
+
+.learning h1 {
+  padding: 1rem 0;
+}
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.course {
+  width: 30%;
+  margin: 1rem;
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course .content {
+  background-color: white;
+  padding: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  height: 45%;
+}
+
+.course h5 {
+  line-height: 2;
+}
 
 
 
