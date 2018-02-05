@@ -195,6 +195,7 @@ nav a:hover {
   display: block;
   background-color: goldenrod;
   border: 2px solid goldenrod;
+  border-radius: 10px;
   color: white;
   width: 100%;
   padding: 0.5rem 0;
@@ -205,7 +206,7 @@ nav a:hover {
 .banner a:hover {
   background-color: lightgrey;
   border: 2px solid goldenrod;
-  color: goldenrod;
+  color: darkturquoise;
   transform: scale(1.05);
 }
 
