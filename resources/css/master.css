@@ -273,7 +273,6 @@ nav a:hover {
 .article {
   display: flex;
   align-items: center;
-  margin-top: 0.5rem;
 }
 
 #border-article {
@@ -359,6 +358,11 @@ nav a:hover {
 .course {
   width: 30%;
   margin: 1rem;
+  transition: all 0.3s linear;
+}
+
+.course:hover {
+  transform: scale(1.10);
 }
 
 .course img {
@@ -422,7 +426,9 @@ nav a:hover {
 
 .thesis .side-articles {
   border: none;
-  padding-top: 2rem;
+  padding-top: 0;
+  margin-top: 1rem;
+  justify-content: flex-start;
 }
 
 .thesis .article {
