@@ -1,0 +1,477 @@
+# Capstone
+
+html {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h1, h2, h3 {
+  font-weight: bold;
+}
+
+span, p, nav {
+  color: darkgrey;
+  font-weight: 300;
+}
+
+
+/* my color choices */
+#main {
+  color: goldenrod;
+}
+
+#accent {
+  color: darkturquoise;
+}
+
+/* fix for linking to a section with a fiexed header */
+.anchor {
+  display: block;
+  height: 4rem;
+  margin-top: -4rem;
+  visibility: hidden;
+}
+
+/* header section */
+
+header {
+  height: 4rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: white;
+}
+
+.logo {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  margin-left: 1.5rem;
+}
+
+.logo span {
+  font-size: 1.25rem
+}
+
+#dark {
+  color: black;
+  font-weight: bold;
+}
+
+#yellow {
+  color: gold;
+  transition: all 0.175s ease-in;
+}
+
+#yellow:hover {
+  color: darkturquoise;
+}
+
+#sec-nav {
+  display: none;
+}
+
+#sec-nav a {
+  padding-left: 0;
+}
+
+@media only screen and (max-width:480px) {
+  .logo {
+    display: none;
+  }
+
+  #main-nav {
+    display: none;
+  }
+
+  #sec-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+    margin: auto;
+    padding: 0 1.5rem;
+  }
+}
+
+nav {
+  margin-right: 1.5rem;
+}
+
+nav a {
+  color: black;
+  padding-left: 1rem;
+  transition: all 0.3s ease-out;
+}
+
+nav a:hover {
+  color: gold;
+}
+
+
+/* main content */
+.main-content {
+  padding-top: 4rem;
+}
+
+.main-media {
+  width: 60%;
+}
+
+.main-media img {
+  width: 100%;
+  padding: 2rem 1.5rem;
+}
+
+.main-media .content {
+  padding: 0 1.5rem;
+  line-height: 1.5;
+}
+
+.main-media p {
+  padding: 1.5rem 0;
+}
+
+@media only screen and (max-width:480px) {
+  .main-media {
+    width: 100%;
+  }
+
+  .main-media img {
+    padding: 0;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .main-media .content {
+    padding: 0;
+  }
+}
+
+/* banner content */
+.banner {
+  display: flex;
+  align-items: center;
+  background-color: lightgray;
+  padding-left: 1.5rem;
+}
+
+.banner .content{
+  width: 30%;
+  padding: 0 1rem;
+}
+.banner #accent {
+  font-weight: normal;
+}
+
+.banner #main {
+  font-weight: bold;
+}
+
+.banner .spacer {
+  margin: 1.75rem 0;
+  line-height: 1.5;
+}
+
+.banner a {
+  display: block;
+  background-color: goldenrod;
+  border: 2px solid goldenrod;
+  border-radius: 10px;
+  color: white;
+  width: 100%;
+  padding: 0.5rem 0;
+  text-align: center;
+  transition: all 0.3s linear;
+}
+
+.banner a:hover {
+  background-color: lightgrey;
+  border: 2px solid goldenrod;
+  color: darkturquoise;
+  transform: scale(1.05);
+}
+
+@media only screen and (max-width: 480px) {
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .banner .content {
+    width: 100%;
+    padding: 0 1.5rem;
+  }
+
+}
+
+/* information content */
+.information {
+  display: flex;
+  padding-left: 2rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .information {
+    padding: 0;
+  }
+}
+
+.main-article {
+  margin-top: 2.31rem;
+  margin-bottom: 2rem;
+  border-left: 1px solid lightgray;
+}
+
+.main-article #main {
+  font-weight: bold;
+}
+
+.information .main-media img {
+  padding: 0 1.5rem 2rem;
+}
+
+.side-articles {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 1rem;
+}
+
+.side-articles a {
+  color: black;
+  transition: all 0.2s ease-in;
+}
+
+.side-articles a:hover {
+  background-color: lightgray;
+  transform: scale(1.05);
+  color: goldenrod;
+}
+
+.article {
+  display: flex;
+  align-items: center;
+}
+
+#border-article {
+  border-bottom: 2px solid lightgray;
+}
+
+.article .full-img {
+  width: 35%;
+  padding: 1rem;
+}
+
+.mob-img {
+  display: none;
+}
+
+.article .content {
+  width: 65%;
+  line-height: 1.5;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (max-width:480px) {
+  .main-article {
+    display: none;
+  }
+
+  .side-articles {
+    width: 100%;
+    padding: 0;
+    padding-bottom: 1.5rem;
+    border: none;
+  }
+
+  .article {
+    flex-direction: column;
+    border: none;
+  }
+
+  .full-img {
+    display: none;
+  }
+
+  .mob-img {
+    display: block;
+    width: 100%;
+    padding: 1.5rem;
+  }
+
+  .article .content {
+    width: 100%;
+    line-height: 1.5;
+    padding: 0 1.5rem;
+  }
+
+  #featured {
+    background-color: inherit;
+  }
+}
+
+
+/* course content */
+.learning {
+  text-align: center;
+  background-color: lightgray;
+  padding: 1rem 3rem;
+}
+
+.mob-learning {
+  display: none;
+}
+
+.learning h1 {
+  padding: 1rem 0;
+}
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-bottom: 1rem;
+}
+
+.course {
+  width: 30%;
+  margin: 1rem;
+  transition: all 0.3s linear;
+}
+
+.course:hover {
+  transform: scale(1.10);
+}
+
+.course img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course .content {
+  background-color: white;
+  padding: 1rem;
+  text-align: left;
+  line-height: 1.5;
+  height: 45%;
+}
+
+.course h5 {
+  line-height: 2;
+}
+
+@media only screen and (max-width:480px) {
+  .learning {
+    display: none;
+  }
+
+  .mob-learning {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-top: 1px solid lightgray;
+  }
+
+  .mob-learning h1 {
+    text-align: center;
+    padding-bottom: 1rem;
+  }
+
+  .mob-learning h3 {
+    background-color: lightgray;
+    margin-top: 0.5rem;
+    padding: 1rem;
+  }
+}
+
+/* thesis content */
+.thesis {
+  display: flex;
+  padding-left: 1.5rem;
+}
+
+@media only screen and (max-width: 480px) {
+  .thesis {
+    padding: 0;
+  }
+}
+
+.thesis-heading {
+  text-align: center;
+  padding-top: 1.5rem;
+}
+
+.thesis .side-articles {
+  border: none;
+  padding-top: 0;
+  margin-top: 1rem;
+  justify-content: flex-start;
+}
+
+.thesis .article {
+  border: none;
+}
+CSS 
+
+@media only screen and (max-width:480px) {
+  .thesis .content {
+    display: none;
+  }
+
+  .thesis-heading {
+    padding-bottom: 1.5rem;
+  }
+
+  .thesis .main-media {
+    width: 100%;
+  }
+
+  .thesis img {
+    width: inherit;
+  }
+
+  .thesis .side-articles {
+    display: none;
+  }
+}
+
+/* footer content */
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 1.5rem;
+  border-top: 1px solid lightgrey;
+  font-size: 0.75rem;
+}
+
+footer a{
+  color: darkgrey;
+}
+
+/* github test */
+/* end css*/
